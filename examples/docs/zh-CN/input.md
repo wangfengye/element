@@ -799,10 +799,10 @@ export default {
 ### Input slots
 | name | 说明 |
 |------|--------|
-| prefix | 输入框头部内容 |
-| suffix | 输入框尾部内容 |
-| prepend | 输入框前置内容 |
-| append | 输入框后置内容 |
+| prefix | 输入框头部内容，只对 `type="text"` 有效 |
+| suffix | 输入框尾部内容，只对 `type="text"` 有效 |
+| prepend | 输入框前置内容，只对 `type="text"` 有效 |
+| append | 输入框后置内容，只对 `type="text"` 有效 |
 
 ### Input Events
 | 事件名称 | 说明 | 回调参数 |
@@ -831,6 +831,8 @@ export default {
 | name | 原生属性 | string | — | — |
 | select-when-unmatched | 在输入没有任何匹配建议的情况下，按下回车是否触发 `select` 事件 | boolean | — | false |
 | label | 输入框关联的label文字 | string | — | — |
+| prefix-icon | 输入框头部图标 | string | — | — |
+| suffix-icon | 输入框尾部图标 | string | — | — |
 
 ### Autocomplete slots
 | name | 说明 |

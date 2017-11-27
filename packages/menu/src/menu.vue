@@ -141,7 +141,9 @@
 
       },
       defaultOpeneds(value) {
-        this.openedMenus = value;
+        if (!this.collapse) {
+          this.openedMenus = value;
+        }
       },
       collapse(value) {
         if (value) this.openedMenus = [];
